@@ -59,10 +59,11 @@ function calculate() {
         }
     }
     tax = basePrice * TAX_RATE;
-    total = basePrice + tax
+    total = basePrice + tax;
     console.log(basePrice)
     console.log(tax)
     console.log(total)
+
     //OUTPUT TO HTML
     document.getElementById("basePriceOutput").innerHTML = basePrice;
     document.getElementById("taxOutput").innerHTML = tax;
