@@ -17,19 +17,19 @@
 <body>
     <label>
         Number of Scoops:
-        <input id="scoopsInput" type="number" value="1">
+        <input id="scoopsInput" type="number" value="1" min="1" max="4">
     </label>
     <div class="cone-cups">
         <label>
-            <input type="radio" name="container" value="cone">
+            <input type="radio" name="container" value="cone" id="cone">
             Cone
         </label>
         <label>
-            <input type="radio" name="container" value="cup" checked>
+            <input type="radio" name="container" value="cup" id="cup" checked>
             Cup
         </label>
     </div>
-    <div class="toppings-wrapper">
+    <div class="toppings-wrapper" id="toppingsWrapper">
         <h4>
             Toppings:
         </h4>
@@ -37,13 +37,13 @@
             <tr>
                 <td>
                     <label>
-                        <input type="checkbox" value="sprinkles">
+                        <input type="checkbox" value="sprinkles" id="sprinkles" checked>
                         Sprinkles ($0.50)
                     </label>
                 </td>
                 <td>
                     <label>
-                        <input type="checkbox" value="whip">
+                        <input type="checkbox" value="whip" id="whip">
                         Whipped Cream ($0.25)
                     </label>
                 </td>
@@ -51,13 +51,13 @@
             <tr>
                 <td>
                     <label>
-                        <input type="checkbox" value="fudge">
+                        <input type="checkbox" value="fudge" id="fudge">
                         Hot Fudge ($1.25)
                     </label>
                 </td>
                 <td>
                     <label>
-                        <input type="checkbox" value="cherry">
+                        <input type="checkbox" value="cherry" id="cherry">
                         Cherry ($0.25)
                     </label>
                 </td>
@@ -94,7 +94,4 @@
         </tr>
     </table>
 </body>
-<script>
-
-
-</script>
+<script src="main.js"></script>
